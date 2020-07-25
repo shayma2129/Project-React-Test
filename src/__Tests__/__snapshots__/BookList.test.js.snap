@@ -1,0 +1,654 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test list of books Testing render an array of Book List 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="BooksList"
+      >
+        <div
+          class="w3-container"
+        >
+          <div
+            class="w3-panel w3-card"
+          >
+            <div
+              class="details-container"
+            >
+              <h6>
+                <ul>
+                  <li
+                    data-testid="libelle"
+                  >
+                    Libelle : 
+                    Les Misérables, tome 1
+                     __
+                  </li>
+                  <li>
+                    Nombre : 
+                    15000
+                    ___
+                  </li>
+                  <li>
+                    Etat : 
+                    Noarchived
+                    ___
+                  </li>
+                  <li>
+                    Emprunt : 
+                  </li>
+                  <div />
+                </ul>
+              </h6>
+            </div>
+            <div
+              class="actions"
+            >
+              <div
+                aria-label="Second group"
+                class="mr-2 btn-group"
+                role="group"
+              >
+                <button
+                  class="btn btn-primary"
+                  data-testid="ShowModalBtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-eye-open"
+                  />
+                </button>
+                <button
+                  class="btn btn-success"
+                  data-testid="updateBtn"
+                  type="button"
+                >
+                  <i
+                    class=" glyphicon glyphicon-edit"
+                  />
+                </button>
+                <button
+                  class="btn btn-danger"
+                  data-testid="deletebtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-trash"
+                  />
+                </button>
+                <button
+                  class="btn btn-warning"
+                  data-testid="archivedbtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-paste"
+                  />
+                </button>
+                <button
+                  class="emprunt btn btn-primary"
+                  data-testid="Empruntbtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-upload"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+             
+          </div>
+        </div>
+        <div
+          class="w3-container"
+        >
+          <div
+            class="w3-panel w3-card"
+          >
+            <div
+              class="details-container"
+            >
+              <h6>
+                <ul>
+                  <li
+                    data-testid="libelle"
+                  >
+                    Libelle : 
+                    Le Petit Prince
+                     __
+                  </li>
+                  <li>
+                    Nombre : 
+                    25000
+                    ___
+                  </li>
+                  <li>
+                    Etat : 
+                    Noarchived
+                    ___
+                  </li>
+                  <li>
+                    Emprunt : 
+                  </li>
+                  <div />
+                </ul>
+              </h6>
+            </div>
+            <div
+              class="actions"
+            >
+              <div
+                aria-label="Second group"
+                class="mr-2 btn-group"
+                role="group"
+              >
+                <button
+                  class="btn btn-primary"
+                  data-testid="ShowModalBtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-eye-open"
+                  />
+                </button>
+                <button
+                  class="btn btn-success"
+                  data-testid="updateBtn"
+                  type="button"
+                >
+                  <i
+                    class=" glyphicon glyphicon-edit"
+                  />
+                </button>
+                <button
+                  class="btn btn-danger"
+                  data-testid="deletebtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-trash"
+                  />
+                </button>
+                <button
+                  class="btn btn-warning"
+                  data-testid="archivedbtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-paste"
+                  />
+                </button>
+                <button
+                  class="emprunt btn btn-primary"
+                  data-testid="Empruntbtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-upload"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+             
+          </div>
+        </div>
+        <div
+          class="w3-container"
+        >
+          <div
+            class="w3-panel w3-card"
+          >
+            <div
+              class="details-container"
+            >
+              <h6>
+                <ul>
+                  <li
+                    data-testid="libelle"
+                  >
+                    Libelle : 
+                    Le Rouge et le Noir
+                     __
+                  </li>
+                  <li>
+                    Nombre : 
+                    5420
+                    ___
+                  </li>
+                  <li>
+                    Etat : 
+                    archived
+                    ___
+                  </li>
+                  <li>
+                    Emprunt : 
+                  </li>
+                  <div />
+                </ul>
+              </h6>
+            </div>
+            <div
+              class="actions"
+            >
+              <div
+                aria-label="Second group"
+                class="mr-2 btn-group"
+                role="group"
+              >
+                <button
+                  class="btn btn-primary"
+                  data-testid="ShowModalBtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-eye-open"
+                  />
+                </button>
+                <button
+                  class="btn btn-success"
+                  data-testid="updateBtn"
+                  type="button"
+                >
+                  <i
+                    class=" glyphicon glyphicon-edit"
+                  />
+                </button>
+                <button
+                  class="btn btn-danger"
+                  data-testid="deletebtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-trash"
+                  />
+                </button>
+                <button
+                  class="btn btn-warning"
+                  data-testid="archivedbtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-paste"
+                  />
+                </button>
+                <button
+                  class="emprunt btn btn-primary"
+                  data-testid="Empruntbtn"
+                  type="button"
+                >
+                  <i
+                    class="glyphicon glyphicon-upload"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="BooksList"
+    >
+      <div
+        class="w3-container"
+      >
+        <div
+          class="w3-panel w3-card"
+        >
+          <div
+            class="details-container"
+          >
+            <h6>
+              <ul>
+                <li
+                  data-testid="libelle"
+                >
+                  Libelle : 
+                  Les Misérables, tome 1
+                   __
+                </li>
+                <li>
+                  Nombre : 
+                  15000
+                  ___
+                </li>
+                <li>
+                  Etat : 
+                  Noarchived
+                  ___
+                </li>
+                <li>
+                  Emprunt : 
+                </li>
+                <div />
+              </ul>
+            </h6>
+          </div>
+          <div
+            class="actions"
+          >
+            <div
+              aria-label="Second group"
+              class="mr-2 btn-group"
+              role="group"
+            >
+              <button
+                class="btn btn-primary"
+                data-testid="ShowModalBtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-eye-open"
+                />
+              </button>
+              <button
+                class="btn btn-success"
+                data-testid="updateBtn"
+                type="button"
+              >
+                <i
+                  class=" glyphicon glyphicon-edit"
+                />
+              </button>
+              <button
+                class="btn btn-danger"
+                data-testid="deletebtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-trash"
+                />
+              </button>
+              <button
+                class="btn btn-warning"
+                data-testid="archivedbtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-paste"
+                />
+              </button>
+              <button
+                class="emprunt btn btn-primary"
+                data-testid="Empruntbtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-upload"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+           
+        </div>
+      </div>
+      <div
+        class="w3-container"
+      >
+        <div
+          class="w3-panel w3-card"
+        >
+          <div
+            class="details-container"
+          >
+            <h6>
+              <ul>
+                <li
+                  data-testid="libelle"
+                >
+                  Libelle : 
+                  Le Petit Prince
+                   __
+                </li>
+                <li>
+                  Nombre : 
+                  25000
+                  ___
+                </li>
+                <li>
+                  Etat : 
+                  Noarchived
+                  ___
+                </li>
+                <li>
+                  Emprunt : 
+                </li>
+                <div />
+              </ul>
+            </h6>
+          </div>
+          <div
+            class="actions"
+          >
+            <div
+              aria-label="Second group"
+              class="mr-2 btn-group"
+              role="group"
+            >
+              <button
+                class="btn btn-primary"
+                data-testid="ShowModalBtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-eye-open"
+                />
+              </button>
+              <button
+                class="btn btn-success"
+                data-testid="updateBtn"
+                type="button"
+              >
+                <i
+                  class=" glyphicon glyphicon-edit"
+                />
+              </button>
+              <button
+                class="btn btn-danger"
+                data-testid="deletebtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-trash"
+                />
+              </button>
+              <button
+                class="btn btn-warning"
+                data-testid="archivedbtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-paste"
+                />
+              </button>
+              <button
+                class="emprunt btn btn-primary"
+                data-testid="Empruntbtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-upload"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+           
+        </div>
+      </div>
+      <div
+        class="w3-container"
+      >
+        <div
+          class="w3-panel w3-card"
+        >
+          <div
+            class="details-container"
+          >
+            <h6>
+              <ul>
+                <li
+                  data-testid="libelle"
+                >
+                  Libelle : 
+                  Le Rouge et le Noir
+                   __
+                </li>
+                <li>
+                  Nombre : 
+                  5420
+                  ___
+                </li>
+                <li>
+                  Etat : 
+                  archived
+                  ___
+                </li>
+                <li>
+                  Emprunt : 
+                </li>
+                <div />
+              </ul>
+            </h6>
+          </div>
+          <div
+            class="actions"
+          >
+            <div
+              aria-label="Second group"
+              class="mr-2 btn-group"
+              role="group"
+            >
+              <button
+                class="btn btn-primary"
+                data-testid="ShowModalBtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-eye-open"
+                />
+              </button>
+              <button
+                class="btn btn-success"
+                data-testid="updateBtn"
+                type="button"
+              >
+                <i
+                  class=" glyphicon glyphicon-edit"
+                />
+              </button>
+              <button
+                class="btn btn-danger"
+                data-testid="deletebtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-trash"
+                />
+              </button>
+              <button
+                class="btn btn-warning"
+                data-testid="archivedbtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-paste"
+                />
+              </button>
+              <button
+                class="emprunt btn btn-primary"
+                data-testid="Empruntbtn"
+                type="button"
+              >
+                <i
+                  class="glyphicon glyphicon-upload"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+           
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

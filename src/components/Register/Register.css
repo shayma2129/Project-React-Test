@@ -1,0 +1,60 @@
+
+.cover-register{
+  background-image: url('./5918.jpg');
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register-form{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height:560px ;
+  padding: 45px;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.register-form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border:1px solid #cbc9c9;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius:0px 3px 3px 0px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  
+}
+
+.register-form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.register-form .message a {
+  color: rgb(212, 156, 1);
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .register-form{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height:550px ;
+    padding: 45px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+}
