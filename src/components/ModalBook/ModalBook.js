@@ -8,14 +8,14 @@ export default function ModalBook({showh,libelle,auteur,edition,nbExemplaire,con
   
   return (
     <>
-      <Modal show={show} onHide={handleClose} animation={false}>
+      <Modal aria-label="Modal" show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
                 <ul>
                     <li aria-label="libelle">Libelle : {libelle} </li>
-                    <li aria-label="autuer">Auteur : {auteur} </li>
+                    <li aria-label="auteur">Auteur : {auteur} </li>
                     <li aria-label="edition">Edition : {edition} </li>
                     <li aria-label="NbExempl">Nombre : {nbExemplaire} </li>
                     <li aria-label="condition">Etat : {condition} </li>

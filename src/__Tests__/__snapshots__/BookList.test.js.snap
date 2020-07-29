@@ -19,9 +19,7 @@ Object {
             >
               <h6>
                 <ul>
-                  <li
-                    data-testid="libelle"
-                  >
+                  <li>
                     Libelle : 
                     Les Misérables, tome 1
                      __
@@ -116,9 +114,7 @@ Object {
             >
               <h6>
                 <ul>
-                  <li
-                    data-testid="libelle"
-                  >
+                  <li>
                     Libelle : 
                     Le Petit Prince
                      __
@@ -213,9 +209,7 @@ Object {
             >
               <h6>
                 <ul>
-                  <li
-                    data-testid="libelle"
-                  >
+                  <li>
                     Libelle : 
                     Le Rouge et le Noir
                      __
@@ -317,9 +311,7 @@ Object {
           >
             <h6>
               <ul>
-                <li
-                  data-testid="libelle"
-                >
+                <li>
                   Libelle : 
                   Les Misérables, tome 1
                    __
@@ -414,9 +406,7 @@ Object {
           >
             <h6>
               <ul>
-                <li
-                  data-testid="libelle"
-                >
+                <li>
                   Libelle : 
                   Le Petit Prince
                    __
@@ -511,9 +501,7 @@ Object {
           >
             <h6>
               <ul>
-                <li
-                  data-testid="libelle"
-                >
+                <li>
                   Libelle : 
                   Le Rouge et le Noir
                    __

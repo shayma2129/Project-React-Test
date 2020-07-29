@@ -1,7 +1,7 @@
 import React from "react"
 import { render,fireEvent} from "@testing-library/react"
 import Book from "../components/Book/Book"
-describe("test book ", () => {
+describe("test book component", () => {
     const mockBook={
         id: 1,
         libelle: "Les Misérables, tome 1",
@@ -18,7 +18,7 @@ describe("test book ", () => {
         const mockupdateBook =jest.fn()
         const mockupdateConditionBook =jest.fn()
         
-        const {getByTestId}=render(<Book
+        const {getByTestId,getByLabelText}=render(<Book
             libelle={mockBook.libelle}
             auteur={mockBook.auteur}
             edition={mockBook.edition}
@@ -32,7 +32,7 @@ describe("test book ", () => {
             updateConditionBook={mockupdateConditionBook}
             />)
         fireEvent.click(getByTestId("ShowModalBtn"))
-      /* const libelle=getByLabelText("libelle")
+       const libelle=getByLabelText("libelle")
         expect(libelle).toHaveTextContent(mockBook.libelle)
         const auteur=getByLabelText("auteur")
         expect(auteur).toHaveTextContent(mockBook.auteur)
@@ -45,6 +45,6 @@ describe("test book ", () => {
         const DateEmprunt=getByLabelText("DateEmprunt")
         expect(DateEmprunt).toHaveTextContent(mockBook.dateEmprunt)
         const DateRetour=getByLabelText("DateRetour")
-        expect(DateRetour).toHaveTextContent(mockBook.dateRetourLivre)*/
+        expect(DateRetour).toHaveTextContent(mockBook.dateRetourLivre)
     })
 })

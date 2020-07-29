@@ -201,7 +201,7 @@ export default function Book({
             <div className="details-container">
               <h6>
                 <ul>
-                  <li data-testid="libelle">Libelle : {libelle} __</li>
+                  <li>Libelle : {libelle} __</li>
                   <li>Nombre : {nbExemplaire}___</li>
                   <li>Etat : {condition}___</li>
                   <li>Emprunt : {EmpruntCondition}</li>

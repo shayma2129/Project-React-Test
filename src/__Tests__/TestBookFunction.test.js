@@ -22,7 +22,7 @@ describe("test function of books", () => {
     })
     
     test("Testing add a book to the list of books",()=>{
-        const expectedBook=[{
+        const expectedBook=[ {
           id: 1,
           libelle: "Les Misérables, tome 1",
           auteur: "Victor Hugo",
@@ -40,9 +40,9 @@ describe("test function of books", () => {
           edition: 800,
           nbExemplaire: 25000,
           condition:"Noarchived",
-          EmpruntCondition:"Noemprun",
-          dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
-          dateRetourLivre:""
+          EmpruntCondition:"emprun",
+          dateEmprunt:"thur Jul 20 2020 15:22:16 GMT+0100",
+          dateRetourLivre:"Wed Aug 08 2001 01:00:00 GMT+0100"
         },
         {
           id: 3,
@@ -54,8 +54,31 @@ describe("test function of books", () => {
           EmpruntCondition:"Noemprun",
           dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
           dateRetourLivre:""
-        },{
-            id: 4,
+        },
+        {
+          id: 9,
+          libelle: "Sur le chemin de ma vie",
+          auteur: " Mitakuye Oyasin",
+          edition: 800,
+          nbExemplaire: 1000,
+          condition:"Noarchived",
+          EmpruntCondition:"Noemprun",
+          dateEmprunt:"",
+          dateRetourLivre:""
+        },
+        {
+          id: 10,
+          libelle: "Alchemiste",
+          auteur: " pawel cohele",
+          edition: 1200,
+          nbExemplaire: 500,
+          condition:"Noarchived",
+          EmpruntCondition:"Noemprun",
+          dateEmprunt:"",
+          dateRetourLivre:""
+        },
+        {
+            id: 6,
             libelle: "test",
             auteur: "chaima",
             edition: 5,
@@ -64,7 +87,8 @@ describe("test function of books", () => {
             EmpruntCondition:"Noemprun",
             dateEmprunt:"",
             dateRetourLivre:""
-          }]
+          },
+         ]
           addBook("test","chaima",5,10,"Noarchived","Noemprun","","")
           //console.log(listBooks)
           expect(listBooks).toEqual(expectedBook)
@@ -88,9 +112,9 @@ describe("test function of books", () => {
           edition: 800,
           nbExemplaire: 25000,
           condition:"Noarchived",
-          EmpruntCondition:"Noemprun",
-          dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
-          dateRetourLivre:""
+          EmpruntCondition:"emprun",
+          dateEmprunt:"thur Jul 20 2020 15:22:16 GMT+0100",
+          dateRetourLivre:"Wed Aug 08 2001 01:00:00 GMT+0100"
         },
             {
             id: 3,
@@ -101,6 +125,27 @@ describe("test function of books", () => {
             condition:"Noarchived",
             EmpruntCondition:"Noemprun",
             dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
+            dateRetourLivre:""
+          },
+          {
+            id: 9,
+            libelle: "Sur le chemin de ma vie",
+            auteur: " Mitakuye Oyasin",
+            edition: 800,
+            nbExemplaire: 1000,
+            condition:"Noarchived",
+            EmpruntCondition:"Noemprun",
+            dateEmprunt:"",
+            dateRetourLivre:""
+          },{
+            id: 10,
+            libelle: "Alchemiste",
+            auteur: " pawel cohele",
+            edition: 1200,
+            nbExemplaire: 500,
+            condition:"Noarchived",
+            EmpruntCondition:"Noemprun",
+            dateEmprunt:"",
             dateRetourLivre:""
           }]
         const result=updateBook(3,"Le Rouge et le Noir : update","Stendhal test",300,5420,"Noarchived","Noemprun","Wed Apr 11 2001 01:00:00 GMT+0100","")
@@ -127,10 +172,31 @@ describe("test function of books", () => {
             edition: 800,
             nbExemplaire: 25000,
             condition:"Noarchived",
+            EmpruntCondition:"emprun",
+            dateEmprunt:"thur Jul 20 2020 15:22:16 GMT+0100",
+            dateRetourLivre:"Wed Aug 08 2001 01:00:00 GMT+0100"
+          },
+          {
+            id: 9,
+            libelle: "Sur le chemin de ma vie",
+            auteur: " Mitakuye Oyasin",
+            edition: 800,
+            nbExemplaire: 1000,
+            condition:"Noarchived",
             EmpruntCondition:"Noemprun",
-            dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
+            dateEmprunt:"",
             dateRetourLivre:""
-          }
+          },{
+            id: 10,
+            libelle: "Alchemiste",
+            auteur: " pawel cohele",
+            edition: 1200,
+            nbExemplaire: 500,
+            condition:"Noarchived",
+            EmpruntCondition:"Noemprun",
+            dateEmprunt:"",
+            dateRetourLivre:""
+          },
         ]
         const idbook=3
         const books =deleteBook(idbook)
@@ -138,7 +204,7 @@ describe("test function of books", () => {
        expect(books).toEqual(goodresult)   
     })
     test("Testing update condition",()=>{
-        const expectedBook=[{
+        const expectedBook=[ {
           id: 1,
           libelle: "Les Misérables, tome 1",
           auteur: "Victor Hugo",
@@ -156,9 +222,9 @@ describe("test function of books", () => {
           edition: 800,
           nbExemplaire: 25000,
           condition:"Noarchived",
-          EmpruntCondition:"Noemprun",
-          dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
-          dateRetourLivre:""
+          EmpruntCondition:"emprun",
+          dateEmprunt:"thur Jul 20 2020 15:22:16 GMT+0100",
+          dateRetourLivre:"Wed Aug 08 2001 01:00:00 GMT+0100"
         },
         {
           id: 3,
@@ -166,12 +232,33 @@ describe("test function of books", () => {
           auteur: "Stendhal",
           edition: 200,
           nbExemplaire: 5420,
-          condition:"Noarchived",
+          condition:"archived",
           EmpruntCondition:"Noemprun",
           dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
           dateRetourLivre:""
-        }]
-          const result=updateConditionBook(3,"Le Rouge et le Noir","Stendhal",200,5420,"Noarchived","Noemprun","Wed Apr 11 2001 01:00:00 GMT+0100","")
+        },
+        {
+          id: 9,
+          libelle: "Sur le chemin de ma vie",
+          auteur: " Mitakuye Oyasin",
+          edition: 800,
+          nbExemplaire: 1000,
+          condition:"Noarchived",
+          EmpruntCondition:"Noemprun",
+          dateEmprunt:"",
+          dateRetourLivre:""
+        },{
+          id: 10,
+          libelle: "Alchemiste",
+          auteur: " pawel cohele",
+          edition: 1200,
+          nbExemplaire: 500,
+          condition:"Noarchived",
+          EmpruntCondition:"Noemprun",
+          dateEmprunt:"",
+          dateRetourLivre:""
+        },]
+          const result=updateConditionBook(3,"Le Rouge et le Noir","Stendhal",200,5420,"archived","Noemprun","Wed Apr 11 2001 01:00:00 GMT+0100","")
           expect(result).toEqual(expectedBook)
     })
     //you shouled Test with only to work correctly

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./BookPageList.css";
 import Menu from "../Menu/Menu";
 import BookListCard from "../BookListCard/BookListCard";
-import { listBooks, fetchBooks } from "../../services/Bookservice.js";
+import { listBooks, fetchBooks, fetchBooksByAuthor } from "../../services/Bookservice.js";
 
 export default function BookPageList({
   id,
@@ -48,6 +48,7 @@ export default function BookPageList({
     setBooks(newBooks);
   };
   const [searchValue, setSearchValue] = useState("");
+  const [searchValueAuteur, setsearchValueAuteur] = useState("");
   const [loading, setLoading] = useState(false);
 
   const [isVisible] = useState(true);
@@ -77,6 +78,32 @@ export default function BookPageList({
     };
   }, [searchValue]);
 
+
+  
+  useEffect(() => {
+    let didCancel = false;
+    const fetchData = async () => {
+      setLoading(true);
+      if (!searchValueAuteur) {
+        setBooks(listBooks);
+        setLoading(false);
+      } else {
+        const result = await fetchBooksByAuthor(searchValueAuteur);
+        //console.log("result: ", didCancel);
+        if (!didCancel) {
+          setBooks(result);
+          //console.log(result);
+          setLoading(false);
+        }
+      }
+    };
+    fetchData();
+
+    return () => {
+      //console.log("cleanup: ", searchValue);
+      didCancel = true;
+    };
+  }, [searchValueAuteur]);
   return (
     <div className="BookPageList">
       <Menu />
@@ -88,6 +115,18 @@ export default function BookPageList({
           placeholder="search here by book's name ........"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
+        />{" "}
+        <i className="fa fa-search"></i>
+      </div>
+
+      <div>
+        <input
+          className="searchInput"
+          type="search"
+          name="search"
+          placeholder="search here by author's name ........"
+          value={searchValueAuteur}
+          onChange={(e) => setsearchValueAuteur(e.target.value)}
         />{" "}
         <i className="fa fa-search"></i>
       </div>

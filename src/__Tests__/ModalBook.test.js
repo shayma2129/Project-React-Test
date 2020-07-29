@@ -2,7 +2,7 @@ import React from "react"
 import { render,fireEvent } from "@testing-library/react"
 import ModalBook from "../components/ModalBook/ModalBook"
 
-describe("test detail book", () => {
+describe("test Modal book", () => {
     const mockBook={
         id: 1,
         libelle: "Les Misérables, tome 1",
@@ -16,7 +16,7 @@ describe("test detail book", () => {
     }
     test.skip("Testing render data in a modal",()=>{
         const mockshowelement =jest.fn()
-        const {getByTestId,getByLabelText}=render(<ModalBook 
+        const {getByLabelText,getByTestId}=render(<ModalBook 
             showh={mockshowelement}
             libelle={mockBook.libelle}
             auteur={mockBook.auteur}
@@ -24,7 +24,8 @@ describe("test detail book", () => {
             nbExemplaire={mockBook.nbExemplaire}
             condition={mockBook.edition}
             />)
-            //fireEvent.click(getByTestId("ShowModalBtn"))
+           // fireEvent.click(getByTestId("ShowModalBtn"))
+           //const modal=getByLabelText("Modal")
             const libelle=getByLabelText("libelle")
               expect(libelle).toHaveTextContent(mockBook.libelle)
               const auteur=getByLabelText("auteur")

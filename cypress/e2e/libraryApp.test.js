@@ -14,7 +14,7 @@ describe("Test e2e ",()=>{
         cy.findByTestId("login").click()
         cy.wait(3000)
         cy.get('[href="/BookPage"]').click()
-        cy.get(':nth-child(2) > .col-6 > .card > .card-footer > [data-testid=Emprunt]').click()
+        cy.get(':nth-child(4) > .col-6 > .card > .card-footer > [data-testid=Emprunt]').click()
         cy.wait(3000)
     })
     it("login with echec",()=>{
@@ -30,7 +30,7 @@ describe("Test e2e ",()=>{
         cy.wait(3000)
         //cy.get('[href="/BookPage"]').click()
     })
-    it.only("Emprunt book with echec",()=>{
+    it("Emprunt book with echec",()=>{
         cy.visit("/Home")
         cy.wait(3000)
         cy.get('[href="/login"]').click()
@@ -42,11 +42,11 @@ describe("Test e2e ",()=>{
         cy.findByTestId("login").click()
         cy.wait(3000)
         cy.get('[href="/BookPage"]').click()
-        cy.get(':nth-child(2) > .col-6 > .card > .card-footer > [data-testid=Emprunt]').click()
-        cy.wait(3000)
         cy.get(':nth-child(3) > .col-6 > .card > .card-footer > [data-testid=Emprunt]').click()
         cy.wait(3000)
         cy.get(':nth-child(4) > .col-6 > .card > .card-footer > [data-testid=Emprunt]').click()
+        cy.wait(3000)
+        cy.get(':nth-child(5) > .col-6 > .card > .card-footer > [data-testid=Emprunt]').click()
         cy.wait(3000)
     })
    

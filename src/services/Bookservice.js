@@ -17,9 +17,9 @@ export const listBooks=[
     edition: 800,
     nbExemplaire: 25000,
     condition:"Noarchived",
-    EmpruntCondition:"Noemprun",
-    dateEmprunt:"Wed Apr 11 2001 01:00:00 GMT+0100",
-    dateRetourLivre:""
+    EmpruntCondition:"emprun",
+    dateEmprunt:"thur Jul 20 2020 15:22:16 GMT+0100",
+    dateRetourLivre:"Wed Aug 08 2001 01:00:00 GMT+0100"
   },
   {
     id: 3,
@@ -38,6 +38,17 @@ export const listBooks=[
     auteur: " Mitakuye Oyasin",
     edition: 800,
     nbExemplaire: 1000,
+    condition:"Noarchived",
+    EmpruntCondition:"Noemprun",
+    dateEmprunt:"",
+    dateRetourLivre:""
+  },
+  {
+    id: 10,
+    libelle: "Alchemiste",
+    auteur: " pawel cohele",
+    edition: 1200,
+    nbExemplaire: 500,
     condition:"Noarchived",
     EmpruntCondition:"Noemprun",
     dateEmprunt:"",
@@ -62,6 +73,13 @@ export const fetchBooks = async searchValue => {
   let list = listBooks.filter(book => book.libelle.includes(searchValue))
   //console.log("list",list)
   return list
+}
+
+export const fetchBooksByAuthor= async searchValueAuteur => {
+  await delay(2000)
+  let listAuteur = listBooks.filter(book => book.auteur.includes(searchValueAuteur))
+  //console.log("list",list)
+  return listAuteur
 }
 export  const addBook = ( libelle, auteur, edition, nbExemplaire, condition,EmpruntCondition,dateEmprunt,dateRetourLivre) => {
   listBooks.push({
